@@ -23,21 +23,26 @@ function deleteToDo(event) {
 
 
 function paintToDo(newTodo) {
-    const li = document.createElement("li");
-    li.id = newTodo.id;
+  const li = document.createElement("li");
+  li.id = newTodo.id;
+  
+  const span = document.createElement("span");
+  span.innerText = newTodo.text;
+  span.addEventListener("click",doneTodo);
+  
+  const button = document.createElement("button");
+  button.innerText = "❌";
+  button.addEventListener("click", deleteToDo);
+  
+  li.appendChild(span);
+  li.appendChild(button);
+  toDoList.appendChild(li);
+}
 
-    const span = document.createElement("span");
-    span.innerText = newTodo.text;
-
-    const button = document.createElement("button");
-    button.innerText = "❌";
-    button.addEventListener("click", deleteToDo);
-    
-    li.appendChild(span);
-    li.appendChild(button);
-    toDoList.appendChild(li);
-  }
-
+function doneTodo(event){
+  const li = event.target.parentElement; // span의 부모(li)
+  li.classList.toggle("strikeout");
+}
 
 
 function handleToDoSubmit(event) {
@@ -63,10 +68,6 @@ const savedToDos = localStorage.getItem(TODOS_KEY);
     parsedToDos.forEach(paintToDo);
   }
 
-  function doneTodo(event){
-    const li = event.target.parentElement; // span의 부모(li)
-    li.classList.toggle("strikeout");
-}
 
  
 

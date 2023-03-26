@@ -89,8 +89,7 @@
         text-align: left;
         /* margin: 0 2px; */
         border-left: 2px solid #79cef591;
-       padding-left: 10px;
-       
+       padding-left: 10px;  
     }
     #todo-list span::after{
         text-decoration:line-through;
@@ -111,10 +110,11 @@
             opacity: 1;
         }
 
-        .strikeout {
+        #todo-list li.strikeout {
             text-decoration: line-through;
             color:dimgray;
           }
+
     
 @media (max-width: 380px){
     input::placeholder {

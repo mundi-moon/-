@@ -14,3 +14,4 @@ bgImage.src= `img/${chosenImage}`;
 
 document.body.appendChild(bgImage);
 
+

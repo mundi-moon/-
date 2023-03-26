@@ -5,6 +5,10 @@ body{
     width: 100%;
    
 }
+/* *{
+    box-sizing: border-box;
+} */
+
 /* 큰데스크탑 */
 @media (max-width: 1280px){
 

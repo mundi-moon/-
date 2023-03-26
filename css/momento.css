@@ -1,0 +1,60 @@
+#quote{
+    display: inline-block;
+    /* align-items: flex-end; */
+    /* position: fixed */
+    width: 100%;
+    text-align: center;
+    /* background-color: pink; */
+    /* align-content: center; */
+    /* margin: 0 auto; */
+    /* margin-top: 0px; */
+    /* margin-top: -30px; */
+    /* margin-bottom: 50px; */
+    /* text-align: center; */
+    /* width: fit-content; */
+    background-color: rgba(128, 0, 128, 0.719);
+    padding: 13px 10px
+    
+    
+    
+}
+
+#quote #one{
+    display: inline-block;
+    color: white;
+    /* margin-right: 20px; */
+    font-weight: 600;
+    font-size: 17px;
+    
+}
+
+#quote #two{
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+    /* align-items: flex-end; */
+    
+}
+
+@media (max-width: 380px){
+    #quote #one{
+        font-size: 13px;
+    }
+    #quote #two{
+        font-size: 13px;
+    }
+
+}
+
+@media (max-width: 440px){
+    #quote #one{
+        font-size: 14px;
+    }
+    #quote #two{
+        font-size: 13px;
+    }
+
+
+}

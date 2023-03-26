@@ -1,0 +1,39 @@
+#weather{
+    
+    /* font-size: 18px; */
+    color: white;
+    background-color: rgba(4, 4, 4, 0.214);
+    width: 100%;
+    /* text-align: center; */
+    display: inline-block;
+    padding: 10px 10px;
+    justify-content: space-between;
+    /* padding: 10px 100px; */
+    /* margin-right: 20px;  */
+    padding-left: 50px;
+    padding-top: 30px;
+    padding-bottom: 18px;
+
+
+}
+
+#weather span{
+  
+    width: 100%;
+    /* margin: auto 10px; */
+    margin: 0 10px;
+    
+    font-weight: 600;
+    font-size: 18px;
+    
+    color: rgba(254, 254, 254, 0.692);
+    
+}
+
+
+@media (max-width: 380px){
+    #weather span{
+        font-size: 13px;
+    }
+   
+}
